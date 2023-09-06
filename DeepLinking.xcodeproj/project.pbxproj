@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1886CDC02AA8B50600DC8EBE /* PFDeepLinkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886CDBF2AA8B50600DC8EBE /* PFDeepLinkingApp.swift */; };
+		1886CDC22AA8B50600DC8EBE /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886CDC12AA8B50600DC8EBE /* FirstView.swift */; };
+		1886CDC42AA8B50800DC8EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1886CDC32AA8B50800DC8EBE /* Assets.xcassets */; };
+		1886CDC72AA8B50800DC8EBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1886CDC62AA8B50800DC8EBE /* Preview Assets.xcassets */; };
+		1886CDCD2AA8B53F00DC8EBE /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 1886CDCC2AA8B53F00DC8EBE /* SwiftUINavigation */; };
+		1886CDCF2AA8B5A700DC8EBE /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886CDCE2AA8B5A700DC8EBE /* SecondView.swift */; };
 		18E4FF4D2AA770590068C704 /* DeepLinkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4FF4C2AA770590068C704 /* DeepLinkingApp.swift */; };
 		18E4FF4F2AA770590068C704 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4FF4E2AA770590068C704 /* FirstView.swift */; };
 		18E4FF512AA7705B0068C704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E4FF502AA7705B0068C704 /* Assets.xcassets */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1886CDBD2AA8B50600DC8EBE /* PFDeepLinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PFDeepLinking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1886CDBF2AA8B50600DC8EBE /* PFDeepLinkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFDeepLinkingApp.swift; sourceTree = "<group>"; };
+		1886CDC12AA8B50600DC8EBE /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		1886CDC32AA8B50800DC8EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1886CDC62AA8B50800DC8EBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1886CDCE2AA8B5A700DC8EBE /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		18E4FF492AA770590068C704 /* DeepLinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLinking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E4FF4C2AA770590068C704 /* DeepLinkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkingApp.swift; sourceTree = "<group>"; };
 		18E4FF4E2AA770590068C704 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
@@ -24,6 +36,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1886CDBA2AA8B50600DC8EBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1886CDCD2AA8B53F00DC8EBE /* SwiftUINavigation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18E4FF462AA770590068C704 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,10 +54,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1886CDBE2AA8B50600DC8EBE /* PFDeepLinking */ = {
+			isa = PBXGroup;
+			children = (
+				1886CDBF2AA8B50600DC8EBE /* PFDeepLinkingApp.swift */,
+				1886CDC12AA8B50600DC8EBE /* FirstView.swift */,
+				1886CDCE2AA8B5A700DC8EBE /* SecondView.swift */,
+				1886CDC32AA8B50800DC8EBE /* Assets.xcassets */,
+				1886CDC52AA8B50800DC8EBE /* Preview Content */,
+			);
+			path = PFDeepLinking;
+			sourceTree = "<group>";
+		};
+		1886CDC52AA8B50800DC8EBE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1886CDC62AA8B50800DC8EBE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		18E4FF402AA770590068C704 = {
 			isa = PBXGroup;
 			children = (
 				18E4FF4B2AA770590068C704 /* DeepLinking */,
+				1886CDBE2AA8B50600DC8EBE /* PFDeepLinking */,
 				18E4FF4A2AA770590068C704 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				18E4FF492AA770590068C704 /* DeepLinking.app */,
+				1886CDBD2AA8B50600DC8EBE /* PFDeepLinking.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +115,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1886CDBC2AA8B50600DC8EBE /* PFDeepLinking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1886CDCA2AA8B50800DC8EBE /* Build configuration list for PBXNativeTarget "PFDeepLinking" */;
+			buildPhases = (
+				1886CDB92AA8B50600DC8EBE /* Sources */,
+				1886CDBA2AA8B50600DC8EBE /* Frameworks */,
+				1886CDBB2AA8B50600DC8EBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PFDeepLinking;
+			packageProductDependencies = (
+				1886CDCC2AA8B53F00DC8EBE /* SwiftUINavigation */,
+			);
+			productName = PFDeepLinking;
+			productReference = 1886CDBD2AA8B50600DC8EBE /* PFDeepLinking.app */;
+			productType = "com.apple.product-type.application";
+		};
 		18E4FF482AA770590068C704 /* DeepLinking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18E4FF572AA7705B0068C704 /* Build configuration list for PBXNativeTarget "DeepLinking" */;
@@ -100,6 +162,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					1886CDBC2AA8B50600DC8EBE = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					18E4FF482AA770590068C704 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -114,16 +179,29 @@
 				Base,
 			);
 			mainGroup = 18E4FF402AA770590068C704;
+			packageReferences = (
+				1886CDCB2AA8B53F00DC8EBE /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
+			);
 			productRefGroup = 18E4FF4A2AA770590068C704 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				18E4FF482AA770590068C704 /* DeepLinking */,
+				1886CDBC2AA8B50600DC8EBE /* PFDeepLinking */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1886CDBB2AA8B50600DC8EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1886CDC72AA8B50800DC8EBE /* Preview Assets.xcassets in Resources */,
+				1886CDC42AA8B50800DC8EBE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18E4FF472AA770590068C704 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +214,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1886CDB92AA8B50600DC8EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1886CDCF2AA8B5A700DC8EBE /* SecondView.swift in Sources */,
+				1886CDC22AA8B50600DC8EBE /* FirstView.swift in Sources */,
+				1886CDC02AA8B50600DC8EBE /* PFDeepLinkingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18E4FF452AA770590068C704 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +237,66 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1886CDC82AA8B50800DC8EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PFDeepLinking/Preview Content\"";
+				DEVELOPMENT_TEAM = XLS3XF57J8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadel.PFDeepLinking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1886CDC92AA8B50800DC8EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PFDeepLinking/Preview Content\"";
+				DEVELOPMENT_TEAM = XLS3XF57J8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.tadel.PFDeepLinking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		18E4FF552AA7705B0068C704 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -331,6 +479,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1886CDCA2AA8B50800DC8EBE /* Build configuration list for PBXNativeTarget "PFDeepLinking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1886CDC82AA8B50800DC8EBE /* Debug */,
+				1886CDC92AA8B50800DC8EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		18E4FF442AA770590068C704 /* Build configuration list for PBXProject "DeepLinking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -350,6 +507,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1886CDCB2AA8B53F00DC8EBE /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1886CDCC2AA8B53F00DC8EBE /* SwiftUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1886CDCB2AA8B53F00DC8EBE /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
+			productName = SwiftUINavigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18E4FF412AA770590068C704 /* Project object */;
 }
